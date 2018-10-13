@@ -10,7 +10,8 @@
         "b524a5c0-fe5e-4617-817d-bb07469b4477",
         "27cacf74-db63-422f-a300-29c7577b88c3",
         "20a4c616-1a31-4c82-8580-27d654aeeb8d",
-        "f4d09b48-cae0-4caf-9f7a-6288eff4311b"
+        "f4d09b48-cae0-4caf-9f7a-6288eff4311b",
+        "c35ece8f-d39b-4d1f-928f-21d20a6b002c"
     ],
     "filterType": "GMSprite",
     "folderName": "Character_Color",

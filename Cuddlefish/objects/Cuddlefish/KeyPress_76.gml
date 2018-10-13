@@ -1,0 +1,1 @@
+sprite_index = Change_Color(sprite_index, yellow_body)
