@@ -10,7 +10,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 74,
+            "enumb": 65,
             "eventtype": 9,
             "m_owner": "720a83e5-877a-4796-804e-35e355b38e52"
         },
@@ -20,7 +20,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 75,
+            "enumb": 83,
             "eventtype": 9,
             "m_owner": "720a83e5-877a-4796-804e-35e355b38e52"
         },
@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 76,
+            "enumb": 68,
             "eventtype": 9,
             "m_owner": "720a83e5-877a-4796-804e-35e355b38e52"
         },
@@ -40,7 +40,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 74,
+            "enumb": 65,
             "eventtype": 10,
             "m_owner": "720a83e5-877a-4796-804e-35e355b38e52"
         },
@@ -50,7 +50,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 75,
+            "enumb": 68,
             "eventtype": 10,
             "m_owner": "720a83e5-877a-4796-804e-35e355b38e52"
         },
@@ -60,7 +60,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 76,
+            "enumb": 83,
             "eventtype": 10,
             "m_owner": "720a83e5-877a-4796-804e-35e355b38e52"
         }
