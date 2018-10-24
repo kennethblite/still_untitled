@@ -1,18 +1,55 @@
 /// @description Insert description here
 // You can write your code in this editor
 gravity_direction=270
-if place_free (x, y+1)
+if place_free (x, y+vspeed)
 {gravity=.5}
 else
 {
-	gravity=0
-	if vspeed >= 0 {
-		vspeed = 0
-	}
-	while !place_meeting(x, y+1,object1) {
+	if vspeed < 0 {
+	while !place_meeting(x, y-1 ,all) {
                  y -= 1;
     }
+	}else if vspeed > 0 {
+	gravity = 0
+	while !place_meeting(x, y+1 ,all) {
+                 y += 1;
+    }
+	}else{
+		if vspeed = 0 && place_free(x, y+1){
+			gravity = 0.5
+		}
+	}
+	
+	vspeed = 0
 }
+/*
+x += hspeed;
+if place_meeting(x+sign(hspeed),y,all) {
+    var wall = instance_place(x+sign(hspeed),y,all);
+    if hspeed > 0 { //right
+        x = (wall.bbox_left-1)-Cuddlefish.bbox_right;
+    } else { //left
+        x = (wall.bbox_right+1)-Cuddlefish.bbox_left;
+    }
+    hspeed = 0
+}
+/*
+if !place_free(x,y-1){
+	while !place_meeting(x, y-1, all) {
+                 y += 1;
+    }
+}
+if !place_free(x-1,y){
+	while !place_meeting(x-1, y, all) {
+                 x += 1;
+    }
+}
+if !place_free(x+1,y-1){
+	while !place_meeting(x+1, y, all) {
+                 x -= 1;
+    }
+}
+*/
 if vspeed >= 10 {
 	vspeed = 10
 }
