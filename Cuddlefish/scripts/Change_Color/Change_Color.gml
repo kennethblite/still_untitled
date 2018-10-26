@@ -6,6 +6,7 @@ current_sprite = argument0
 // red = 4
 // blue = 2
 // yellow = 1
+/*
 col_val = ds_map_create()
 val_col = ds_map_create()
 ds_map_add(col_val, red_body, 4)
@@ -26,7 +27,7 @@ ds_map_add(val_col, 6, purple_body)
 ds_map_add(val_col, 3, green_body)
 ds_map_add(val_col, 0, white_body)
 ds_map_add(val_col, 7, black_body)
-
+*/
 current_sprite_val = ds_map_find_value(col_val, current_sprite)
 color_addition_sprite_val = ds_map_find_value(col_val, color_addition_sprite)
 return ds_map_find_value(val_col,color_addition_sprite_val ^ current_sprite_val)
