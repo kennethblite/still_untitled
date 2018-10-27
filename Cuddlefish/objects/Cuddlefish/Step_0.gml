@@ -23,6 +23,55 @@ else
 	
 	vspeed = 0
 }
+
+if place_meeting (x+hspeed, y, effect)
+{
+	if hspeed < 0 {
+	while !place_meeting(x-1, y ,effect) {
+                 x -= 1;
+    }
+	}else if hspeed > 0 {
+	while !place_meeting(x+1, y ,effect) {
+                 x += 1;
+    }
+	}
+	//hspeed = 0
+	
+	if place_meeting(x-1,y-1,effect) && hspeed < 0 {
+		hspeed = 0
+	}
+	if place_meeting(x+1,y-1,effect) && hspeed > 0 {
+		hspeed = 0
+	}
+	
+}
+if place_meeting (x, y, effect){
+	how_far_x = 0
+	how_far_y = 0
+	
+	while place_meeting(x,y,effect){
+		if !(place_meeting(x+how_far_x,y-1,effect)){
+			x = x + how_far_x
+			break
+		}
+		if !(place_meeting(x-how_far_x,y-1,effect)){
+			x = x - how_far_x
+			break
+		}
+		if !(place_meeting(x,y-how_far_y,effect)){
+			y = y - how_far_x
+			break
+		}
+		if !(place_meeting(x,y+how_far_y,effect)){
+			y = y + how_far_x
+			break
+		}
+		how_far_x = how_far_x+1
+		how_far_y = how_far_y+1
+	}
+	
+}
+
 /*
 x += hspeed;
 if place_meeting(x+sign(hspeed),y,all) {
@@ -66,4 +115,9 @@ if (place_meeting(x, y+1, effect) && !place_meeting(x, y_prev+1, effect )) {
 }
 
 y_prev = y;
+
+if scoring{
+	score = score+1
+}
+
 

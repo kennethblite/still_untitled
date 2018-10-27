@@ -39,6 +39,13 @@ ds_map_add(Wall_Color, 6, Purple_Wall)
 ds_map_add(Wall_Color, 3, Green_Wall)
 ds_map_add(Wall_Color, 0, White_Wall)
 ds_map_add(Wall_Color, 7, Black_Wall)
+
+//Start the spawning of colored blocks
+alarm[1] = 1
+
+score = 0
+scoring = true
+
 /*
 current_sprite_val = ds_map_find_value(col_val, current_sprite)
 color_addition_sprite_val = ds_map_find_value(col_val, color_addition_sprite)
